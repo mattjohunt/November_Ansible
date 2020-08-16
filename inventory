@@ -1,0 +1,16 @@
+[jenkins]
+35.246.8.90
+
+[swarm-master]
+35.246.26.42
+
+[swarm-master:vars]
+ansible_user=bob
+ansible_ssh_private_key_file=~/.ssh/google_compute_engine
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[jenkins:vars]
+ansible_user=bob
+ansible_ssh_private_key_file=~/.ssh/google_compute_engine
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
